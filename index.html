@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <style>
+        body,
+        header,
+        footer,
+        main,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+        body {
+            background-color: rgba(223, 221, 219, 0.918);
+            font-family: 'Karla', sans-serif;
+            color: rgba(255, 255, 255, 0.952);
+            max-width: 50%;
+            font-size: 16px;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: rgba(255, 255, 255, 0.952);
+            padding: 50px;
+            line-height: 2;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .blue-heading {
+            color: hsl(179, 62%, 43%);
+        }
+        
+        .yellow-heading {
+            color: hsl(71, 73%, 54%);
+        }
+        
+        .darker-gray {
+            color: hsl(218, 22%, 67%);
+        }
+        
+        .main {
+            background-color: hsl(179, 62%, 43%);
+            display: flex;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.952);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .section {
+            width: 50%;
+            padding: 50px;
+        }
+        
+        .heading {
+            padding-bottom: 30px;
+        }
+        
+        .paragraph {
+            display: flex;
+            align-items: center;
+        }
+        
+        .big-text {
+            font-size: 40px;
+        }
+        
+        .small-text {
+            font-weight: lighter;
+        }
+        
+        .lighter-text {
+            color: silver;
+        }
+        
+        .paragraph span:first-of-type {
+            margin-right: 10px;
+        }
+        
+        .button {
+            background-color: hsl(71, 73%, 54%);
+            color: rgba(255, 255, 255, 0.952);
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 10px 25px rgb(5, 97, 109);
+        }
+        
+        .bg-lighter {
+            background-color: hsl(179, 44%, 50%);
+            border-bottom-right-radius: 10px;
+        }
+        
+        .lighter-paragraph {
+            font-weight: lighter;
+        }
+        
+        .text {
+            line-height: 2;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="blue-heading">Join our community</h1>
+        <h2 class="yellow-heading">30-day, hassle-free money back guarantee</h2>
+        <p><span class="darker-gray">Gain access to out full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</span>
+        </p>
+    </header>
+
+    <main class="main">
+        <div class="section">
+            <article>
+                <h2 class="heading">Monthly Subscription</h2>
+                <p class="paragraph">
+                    <span class="big-text">$29 </span>
+                    <span class="lighter-text small-text"> per month</span>
+                </p>
+
+                <h3 class="lighter-paragraph">Full access for less than $1 a day</h3>
+                <button class="button">Sign up</button>
+            </article>
+        </div>
+
+        <div class="section bg-lighter">
+            <article>
+                <h2 class="heading">Why Us</h2>
+                <p class="lighter-paragraph text">Tutorials by industry experts Peer & expert code review Coding exercises Access to our GitHub repos Community forum Flashcard decks New videos every week</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/karolinamateeva" target="_blank">Karolina Mateeva</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
